@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 5 Diseño web</title>
+    <link rel="stylesheet" href="Principal.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="header">
+    <h1>Tarea 5 Diseño Web</h1>
+    <p  class="lead"><small>Desarrolle una página HTML cuyo objetivo será implementar ejemplos prácticos para cada uno 
+        de los elementos de sintaxis investigados, los ejemplos deben ser claros y concisos. La página 
+        web debe tener una estructura organizada y una interfaz intuitiva. </small></p>
+</div>
+
+<div class=" fondo mx-auto" style="background-image: url(imagenes/fondo.jpg); margin-top: -20px; padding-top: 20px; padding-bottom: 30px;">
+
+    <div class="container mx-auto bg-dark" style="padding-top: 45px; border-radius: 7px;">
+
+        <br>
+
+        <section class="mx-auto">
+            <h2>Control de Flujo y Manejo de Errores</h2>
+        
+            <div class="example">
+                <h3>if...else</h3>
+                <p>Verifica si el número es par o impar.</p>
+                <input type="number" id="numIfElse" placeholder="Ingresa un número">
+                <button onclick="verificarParidad()"  class="btn btn-info"><small>Verificar</small></button>
+                <p id="resultadoIfElse"></p>
+            </div>
+        
+            <div class="example">
+                <h3>switch</h3>
+                <p>Ingresa un número de día para ver el día de la semana.</p>
+                <input type="number" id="numSwitch" placeholder="1-7">
+                <button onclick="mostrarDiaSemana()  "  class="btn btn-info"><small>Mostrar día</small></button>
+                <p id="resultadoSwitch"></p>
+            </div>
+        
+            <div class="example">
+                <h3>try/catch/throw</h3>
+                <p>Simula un error personalizado y lo muestra.</p>
+                <button onclick="generarError()" class="btn btn-info"><small>Generar Error</small></button>
+                <p id="resultadoTryCatch"></p>
+            </div>
+        </section>
+        
+        <section class="mx-auto">
+            <h2>Bucles e Iteración</h2>
+        
+            <div class="example">
+                <h3>for</h3>
+                <p>Muestra los números del 1 al 5.</p>
+                <button onclick="mostrarNumerosFor() " class="btn btn-info"><small>Mostrar Números</small></button>
+                <p id="resultadoFor"></p>
+            </div>
+        
+            <div class="example">
+                <h3>while</h3>
+                <p>Muestra los números del 1 al 3.</p>
+                <button onclick="mostrarNumerosWhile()" class="btn btn-info"><small>Mostrar Números</small></button>
+                <p id="resultadoWhile"></p>
+            </div>
+        </section>
+        
+        <section class="mx-auto">
+            <h2>Funciones</h2>
+        
+            <div class="example">
+                <h3>Función de suma</h3>
+                <p>Ingresa dos números para sumarlos.</p>
+                <input type="number" id="num1" placeholder="Número 1">
+                <input type="number" id="num2" placeholder="Número 2">
+                <button onclick="sumarNumeros()" class="btn btn-info"><small>Sumar</small></button>
+                <p id="resultadoSuma"></p>
+            </div>
+        </section>
+        
+        <section class="mx-auto">
+            <h2>Expresiones y Operadores</h2>
+        
+            <div class="example">
+                <h3>Operadores aritméticos</h3>
+                <p>Calcula (2 + 3) * 4.</p>
+                <button onclick="calcularOperacion()" class="btn btn-info"><small>Calcular</small></button>
+                <p id="resultadoOperacion"></p>
+            </div>
+        </section>
+        
+        <section class="mx-auto">
+            <h2>Números y Fechas</h2>
+        
+            <div class="example">
+                <h3>Fecha Actual</h3>
+                <p>Muestra la fecha y hora actuales.</p>
+                <button onclick="mostrarFecha()" class="btn btn-info"><small>Mostrar Fecha</small></button>
+                <p id="resultadoFecha"></p>
+            </div>
+        </section>
+        
+        <section class="mx-auto">
+            <h2>DOM (Document Object Model)</h2>
+        
+            <div class="example">
+                <h3>Manipulación del DOM</h3>
+                <p>Modifica el texto de este párrafo:</p>
+                <p id="parrafoDOM">Texto original</p>
+                <button onclick="modificarTexto()" class="btn btn-info"><small>Modificar Texto</small></button>
+            </div>
+        </section>
+
+        <br>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
